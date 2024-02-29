@@ -9,6 +9,8 @@ homepage = "https://github.com/notviri/rmp3"
 repository = "https://github.com/notviri/rmp3"
 documentation = "https://docs.rs/rmp3"
 readme = "README.md"
+test = false
+bench = false
 
 # for crates.io
 include = [
@@ -23,7 +25,7 @@ include = [
 cc = "1.0"
 
 [dependencies]
-libc = "0.2"
+libc = { version = "0.2", default-features = false }
 
 [features]
 default = ["simd"]
